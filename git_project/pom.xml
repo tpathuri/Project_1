@@ -196,12 +196,12 @@
   </dependency>
     </dependencies>
 
-	<repositories>
-	<repository>
+<repositories>
+	<!-- <repository>
    <id>mulesoft</id>
    <name>mule</name>
    <url>https://repository-master.mulesoft.org/nexus/content/groups/public/</url>
-  </repository>
+  </repository> -->
         <repository>
             <id>Central</id>
             <name>Central</name>
