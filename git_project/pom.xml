@@ -59,6 +59,30 @@
 					</execution>
 				</executions>
 			</plugin>
+			
+			<plugin>
+    <groupId>org.mule.tools.maven</groupId>
+    <artifactId>mule-maven-plugin</artifactId>
+    <version>2.2.1</version>
+    <configuration>
+        <deploymentType>arm</deploymentType>
+        <username>anjana3194</username>
+        <password>Anjuchiku@66</password>
+        <target>server1</target>
+        <!-- One of: server, serverGroup, cluster -->
+        <targetType>server</targetType>
+        <environment>sandbox</environment>
+    </configuration>
+    <executions>
+        <execution>
+            <id>deploy</id>
+            <phase>deploy</phase>
+            <goals>
+                <goal>deploy</goal>
+            </goals>
+        </execution>
+    </executions>
+</plugin>
 		</plugins>
 	</build>
 
