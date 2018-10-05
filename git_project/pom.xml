@@ -60,7 +60,7 @@
 					</execution>
 				</executions>
 			</plugin>
-			
+<!-- 			
 			<plugin>
     <groupId>org.mule.tools.maven</groupId>
     <artifactId>mule-maven-plugin</artifactId>
@@ -83,7 +83,30 @@
             </goals>
         </execution>
     </executions>
-</plugin>
+</plugin> -->
+	<plugin>
+              <groupId>org.mule.tools.maven</groupId>
+              <artifactId>mule-maven-plugin</artifactId>
+              <version>2.0</version>
+              <configuration>
+                 <deploymentType>cloudhub</deploymentType>
+                 <muleVersion>${mule.version}</muleVersion>
+                 <username>raviteja0422_sep</username>
+                 <password>Rpedada1</password>
+                 <workerType>Micro</workerType>
+                 <redeploy>true</redeploy>
+                 <environment>Sandbox</environment>
+              </configuration>
+              <executions>
+                 <execution>
+                    <id>deploy</id>
+                    <phase>deploy</phase>
+                    <goals>
+                       <goal>deploy</goal>
+                    </goals>
+                 </execution>
+              </executions>
+           </plugin>
 		</plugins>
 	</build>
 
@@ -179,7 +202,7 @@
    <name>mule</name>
    <url>https://repository-master.mulesoft.org/nexus/content/groups/public/</url>
   </repository>
-        <!--   <repository>
+        <repository>
             <id>Central</id>
             <name>Central</name>
             <url>http://repo1.maven.org/maven2/</url>
@@ -191,7 +214,6 @@
             <url>http://repository.mulesoft.org/releases/</url>
             <layout>default</layout>
         </repository>
- -->
     </repositories>
     <pluginRepositories>
         <pluginRepository>
