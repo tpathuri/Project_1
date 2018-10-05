@@ -70,7 +70,6 @@
         <username>anjana3194</username>
         <password>Anjuchiku@66</password>
         <target>server1</target>
-        <!-- One of: server, serverGroup, cluster -->
         <targetType>server</targetType>
         <environment>sandbox</environment>
     </configuration>
